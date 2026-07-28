@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCESS Cosmetics | Home</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/Ncess logo.jpg" alt="NCESS Cosmetics Logo">
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="pages/shop.html"><i class="fas fa-store"></i> Shop</a></li>
+          <li><a href="pages/categories.html"><i class="fas fa-th"></i> Categories</a></li>
+          <li><a href="pages/about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+          <li><a href="pages/login.html"><i class="fas fa-user"></i> Login</a></li>
+          <li><a href="pages/sign up.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+          <li><a href="pages/contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Luxury beauty for deeper tones</p>
+        <h1>Glow Naturally with NCESS Cosmetics</h1>
+        <p>Premium skincare and beauty products crafted for melanin-rich skin tones.</p>
+        <a class="cta-btn" href="pages/shop.html">Shop Now</a>
+        <div class="slideshow-controls">
+          <span class="prev"><i class="fas fa-chevron-left"></i></span>
+          <span class="next"><i class="fas fa-chevron-right"></i></span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/Copilot_20260727_060524.png" alt="Promotional banner for NCESS Cosmetics">
+        <img src="images/Copilot_20260727_065303.png" alt="Beauty products arranged elegantly">
+        <img src="images/Copilot_20260727_065714.png" alt="Luxury lip gloss collection">
+      </div>
+    </section>
+
+    <section class="brand-spotlight" aria-label="Brand highlights">
+      <div class="brand-card">
+        <i class="fas fa-leaf"></i>
+        <h3>Clean Luxury</h3>
+        <p>Thoughtfully crafted formulas that feel indulgent and skin-loving.</p>
+      </div>
+      <div class="brand-card">
+        <i class="fas fa-palette"></i>
+        <h3>Made for Melanin</h3>
+        <p>Colors and care designed to complement richer skin tones beautifully.</p>
+      </div>
+      <div class="brand-card">
+        <i class="fas fa-gem"></i>
+        <h3>Elevated Finish</h3>
+        <p>Premium packaging and polished results that feel timeless and refined.</p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <h2><i class="fas fa-star"></i> Best Sellers</h2>
+        <a class="text-link" href="pages/shop.html">View all</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="images/OIP.webp" alt="Gentle skincare cleanser">
+          <h3>Cleansers</h3>
+          <p>Hydrating formulas for fresh, radiant skin.</p>
+          <button class="price-tag" type="button" data-product="Cleansers" data-price="$18">Pay $18</button>
+        </article>
+        <article class="product-card">
+          <img src="images/serum 1.webp" alt="Glow-enhancing serum">
+          <h3>Serum</h3>
+          <p>Deep nourishment with a healthy finish.</p>
+          <button class="price-tag" type="button" data-product="Serum" data-price="$24">Pay $24</button>
+        </article>
+        <article class="product-card">
+          <img src="images/OIP makeup.jpg" alt="Makeup essentials">
+          <h3>Makeup</h3>
+          <p>Flawless coverage with a natural glow.</p>
+          <button class="price-tag" type="button" data-product="Makeup" data-price="$32">Pay $32</button>
+        </article>
+        <article class="product-card">
+          <img src="images/OIP bold lipsticks.jpg" alt="Bold lip products">
+          <h3>Lip Gloss</h3>
+          <p>Velvety shine with rich, long-lasting color.</p>
+          <button class="price-tag" type="button" data-product="Lip Gloss" data-price="$16">Pay $16</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <h2><i class="fas fa-comment"></i> What Our Customers Say</h2>
+      </div>
+      <div class="testimonial-cards">
+        <article class="testimonial">
+          <p>“NCESS Cosmetics transformed my skincare routine. My skin glows like never before!”</p>
+          <span>- Ama, Accra</span>
+        </article>
+        <article class="testimonial">
+          <p>“The serum is magic! It’s perfect for my melanin skin tone.”</p>
+          <span>- Zuri, Nairobi</span>
+        </article>
+        <article class="testimonial">
+          <p>“I love the lip gloss collection — smooth, shiny, and long-lasting.”</p>
+          <span>- Jade, London</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="checkout-modal" class="checkout-modal" aria-hidden="true">
+    <div class="checkout-modal-content">
+      <button class="close-modal" type="button" aria-label="Close checkout">×</button>
+      <h2>Secure Checkout</h2>
+      <p id="checkout-summary">You are purchasing this item.</p>
+      <form id="checkout-form" class="checkout-form">
+        <label for="buyer-name">Full Name</label>
+        <input id="buyer-name" type="text" placeholder="Your name" required>
+        <label for="buyer-email">Email</label>
+        <input id="buyer-email" type="email" placeholder="you@example.com" required>
+        <label for="card-number">Card Number</label>
+        <input id="card-number" type="text" placeholder="4242 4242 4242 4242" required>
+        <label for="expiry">Expiry Date</label>
+        <input id="expiry" type="text" placeholder="MM/YY" required>
+        <label for="cvv">CVV</label>
+        <input id="cvv" type="text" placeholder="123" required>
+        <button class="checkout-submit" type="submit">Pay Now</button>
+      </form>
+      <p id="checkout-message" class="checkout-message"></p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/Ncess logo.jpg" alt="NCESS Cosmetics Logo">
+      </div>
+      <p class="footer-tagline">Luxury beauty for deeper tones</p>
+      <div class="footer-links">
+        <a href="pages/shop.html">Shop</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/faqs.html">FAQs</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2026 NCESS Cosmetics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
