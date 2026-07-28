@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | NCESS Cosmetics</title>
+  <link rel="stylesheet" href="../src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="../images/Ncess logo.jpg" alt="NCESS Cosmetics Logo">
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="shop.html"><i class="fas fa-store"></i> Shop</a></li>
+          <li><a href="categories.html"><i class="fas fa-th"></i> Categories</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+          <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+          <li><a href="sign up.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+          <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-card">
+      <div class="section-heading">
+        <h1><i class="fas fa-store"></i> Shop Our Products</h1>
+      </div>
+      <p>Curated essentials for radiant skin and confident beauty.</p>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="../images/elegant-skincare-products-stockcake.jpg" alt="Daily cleanser for healthy skin">
+          <h3>Cleanser</h3>
+          <p>Gentle daily care for a fresh glow.</p>
+          <button class="price-tag" type="button" data-product="Cleanser" data-price="$15">Buy $15</button>
+        </article>
+        <article class="product-card">
+          <img src="../images/serum 1.webp" alt="Hydrating serum for glow">
+          <h3>Serum</h3>
+          <p>Boosts radiance with deep nourishment.</p>
+          <button class="price-tag" type="button" data-product="Serum" data-price="$25">Buy $25</button>
+        </article>
+        <article class="product-card">
+          <img src="../images/OIP makeup.jpg" alt="Foundation with natural finish">
+          <h3>Foundation</h3>
+          <p>Soft-focus coverage for a flawless finish.</p>
+          <button class="price-tag" type="button" data-product="Foundation" data-price="$30">Buy $30</button>
+        </article>
+        <article class="product-card">
+          <img src="../images/lipgloss1.webp" alt="Velvet lip gloss in a rich rose tone">
+          <h3>Velvet Gloss</h3>
+          <p>High-shine color with a cushiony, comfortable finish.</p>
+          <button class="price-tag" type="button" data-product="Velvet Gloss" data-price="$18">Buy $18</button>
+        </article>
+        <article class="product-card">
+          <img src="../images/lipgloss3.webp" alt="Tinted lip balm for everyday wear">
+          <h3>Tinted Balm</h3>
+          <p>Hydrating color that melts effortlessly into your routine.</p>
+          <button class="price-tag" type="button" data-product="Tinted Balm" data-price="$14">Buy $14</button>
+        </article>
+        <article class="product-card">
+          <img src="../images/OIP bold lipsticks.jpg" alt="Statement lipstick in a bold nude shade">
+          <h3>Bold Lipstick</h3>
+          <p>Rich pigment and a satin-soft finish for every occasion.</p>
+          <button class="price-tag" type="button" data-product="Bold Lipstick" data-price="$22">Buy $22</button>
+        </article>
+        <article class="product-card">
+          <img src="../images/OIP moisturizers.jpg" alt="Luxury moisturizer with rich nourishment">
+          <h3>Moisturizer</h3>
+          <p>Deep hydration that leaves skin soft, smooth, and radiant.</p>
+          <button class="price-tag" type="button" data-product="Moisturizer" data-price="$28">Buy $28</button>
+        </article>
+        <article class="product-card">
+          <img src="../images/makeup1.webp" alt="Cream contour and glow essentials">
+          <h3>Glow Set</h3>
+          <p>A polished duo for sculpted definition and luminous shine.</p>
+          <button class="price-tag" type="button" data-product="Glow Set" data-price="$35">Buy $35</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="checkout-modal" class="checkout-modal" aria-hidden="true">
+    <div class="checkout-modal-content">
+      <button class="close-modal" type="button" aria-label="Close checkout">×</button>
+      <h2>Secure Checkout</h2>
+      <p id="checkout-summary">You are purchasing this item.</p>
+      <form id="checkout-form" class="checkout-form">
+        <label for="buyer-name">Full Name</label>
+        <input id="buyer-name" type="text" placeholder="Your name" required>
+        <label for="buyer-email">Email</label>
+        <input id="buyer-email" type="email" placeholder="you@example.com" required>
+        <label for="card-number">Card Number</label>
+        <input id="card-number" type="text" placeholder="4242 4242 4242 4242" required>
+        <label for="expiry">Expiry Date</label>
+        <input id="expiry" type="text" placeholder="MM/YY" required>
+        <label for="cvv">CVV</label>
+        <input id="cvv" type="text" placeholder="123" required>
+        <button class="checkout-submit" type="submit">Pay Now</button>
+      </form>
+      <p id="checkout-message" class="checkout-message"></p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../images/Ncess logo.jpg" alt="NCESS Cosmetics Logo">
+      </div>
+      <p class="footer-tagline">Luxury beauty for deeper tones</p>
+      <div class="footer-links">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2026 NCESS Cosmetics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../src/script.js"></script>
+</body>
+</html>
