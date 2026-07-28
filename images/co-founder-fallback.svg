@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" rx="48" fill="#1b0f1f"/>
+  <rect x="40" y="40" width="720" height="720" rx="36" fill="url(#g)"/>
+  <circle cx="400" cy="320" r="140" fill="#ffe2f0" opacity="0.95"/>
+  <path d="M235 650c40-110 120-170 165-170s125 60 165 170" fill="#ffe2f0" opacity="0.95"/>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff67b1"/>
+      <stop offset="100%" stop-color="#8a2be2"/>
+    </linearGradient>
+  </defs>
+  <text x="400" y="735" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="70" font-weight="700" fill="#ffffff">CF</text>
+</svg>
